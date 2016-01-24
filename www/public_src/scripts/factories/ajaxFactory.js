@@ -2,10 +2,10 @@ angular.module('wwwApp')
     .factory('ajaxFactory', function($http) {
 
             return {
-                getAppTitle : function() {
-                    return $http.get('/api/getData/title')
+                getCode : function(code) {
+                    return $http.get('/api/getCode/'+code)
                                 .then(function(result){
-                                    return result.data;
+                                    return result.results;
                                 });
                 }
             };

@@ -5,6 +5,7 @@ var express = require('express'),
     cookieParser = require('cookie-parser'),
     favicon = require('serve-favicon'),
     fs = require('fs'),
+    enigmajs = require('enigma'),
     compress = require('compression'); //gzip lib
 
 var httpApp = express();
